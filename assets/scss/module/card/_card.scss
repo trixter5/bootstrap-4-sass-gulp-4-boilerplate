@@ -1,0 +1,38 @@
+//card
+$card-spacer-y: 0;
+$card-spacer-x: 0;
+$card-border-color: transparent;
+$card-custom-padding: 0.75rem;
+$card-text-color: #7B7C7D;
+
+.card-custom {
+  box-shadow: $box-shadow-lg;
+  .card-header {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 0;
+    .badge {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      text-transform: uppercase;
+      font-weight: 400;
+      border-radius: 0;
+      background-color: #254272;
+    }
+  }
+  .card-body {
+    padding: $card-custom-padding;
+  }
+  .card-footer {
+    background-color: #ddd;
+    padding: $card-custom-padding;
+    border-top: 0;
+  }
+  .card-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $card-text-color;
+  }
+}

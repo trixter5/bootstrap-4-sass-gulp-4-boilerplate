@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Bootstrap Stater</title>
+
+    <!-- Icons for this template -->
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="btns.html">Btns </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">Card</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link " href="modal.html">Modal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="modal2.html">Modal 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="checkbox.html">Checkbox</a>
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search </button>
+        </form>
+    </div>
+</nav>
+
+<main role="main" class="container">
+    <div class="jumbotron text-center">
+        <img src="assets/img/logo.png"/>
+        <h1>Bootstrap 4 modal & tabs</h1>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Launch demo modal
+       </button>
+       <div class="modal modal-custom fade text-left" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" role="tab" href="#one">One</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" role="tab" href="#two">Two</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <div id="one" class="tab-pane active" role="tabpanel">
+                            <h3>One</h3>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa omnis nisi eveniet sint alias facere cum labore nulla architecto commodi deleniti mollitia aliquid vitae itaque reiciendis, expedita perspiciatis corporis laborum.
+                        </div>
+                        <div id="two" class="tab-pane" role="tabpanel">
+                            <h3>Two</h3>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa omnis nisi eveniet sint alias facere cum labore nulla architecto commodi deleniti mollitia aliquid vitae itaque reiciendis, expedita perspiciatis corporis laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       </div>
+    </div>
+</main>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/vendor/jquery.slim.min.js"></script>
+<script src="assets/js/vendor/popper.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

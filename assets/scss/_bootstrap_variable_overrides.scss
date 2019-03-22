@@ -1,1 +1,34 @@
 // Bootstrap overrides variables
+$color1: #5A509F !default;
+$color2: #5E7CE9 !default;
+$color3: #E63A57 !default;
+$color4: #E97628 !default;
+
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    "color1": $color1,
+    "color2": $color2,
+    "color3": $color3,
+    "color4": $color4
+  ),
+  $colors
+);
+
+$primary:     rgba($color1, 0.8) !default;
+$primarylight:    rgba($color2, 0.8) !default;
+$danger:     rgba($color3, 0.8) !default;
+$secondary:    rgba($color4, 0.8) !default;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "primary-light": $primarylight,
+    "danger": $danger,
+    "secondary": $secondary,
+  ),
+  $theme-colors
+);

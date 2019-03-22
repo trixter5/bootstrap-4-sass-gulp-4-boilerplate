@@ -26,7 +26,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -35,8 +35,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="card.html">Card</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="modal.html">Modal</a>
+            <li class="nav-item active">
+                <a class="nav-link " href="modal.html">Modal</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="modal2.html">Modal 2</a>
@@ -55,25 +55,43 @@
 <main role="main" class="container">
     <div class="jumbotron text-center">
         <img src="assets/img/logo.png"/>
-        <h1>Bootstrap 4 Starter Template</h1>
-        <p class="lead">This example is a quick bootstrap starter template.</p>
-            <ul class="list-unstyled">
-                <li>
-                    <a class="" href="btns.html" role="button" target="_blank">example 1: btns & colors</a>
-                </li>
-                <li>
-                    <a class="" href="card.html" role="button" target="_blank">example 2: bs4 card</a>
-                </li>
-                <li>
-                    <a class="" href="modal.html" role="button" target="_blank">example 3: bs4 modal & tabs</a>
-                </li>
-                <li>
-                    <a class="" href="modal2.html" role="button" target="_blank">example 4: bs4 modal slide right</a>
-                </li>
-                <li>
-                    <a class="" href="checkbox.html" role="button" target="_blank">example 5: bs4 custom checkbox/radio inputs</a>
-                </li>
-            </ul>
+        <h1>Bootstrap 4 modal & tabs</h1>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Launch demo modal
+       </button>
+       <div class="modal modal-custom fade text-left" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" role="tab" href="#one">One</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" role="tab" href="#two">Two</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <div id="one" class="tab-pane active" role="tabpanel">
+                            <h3>One</h3>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa omnis nisi eveniet sint alias facere cum labore nulla architecto commodi deleniti mollitia aliquid vitae itaque reiciendis, expedita perspiciatis corporis laborum.
+                        </div>
+                        <div id="two" class="tab-pane" role="tabpanel">
+                            <h3>Two</h3>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa omnis nisi eveniet sint alias facere cum labore nulla architecto commodi deleniti mollitia aliquid vitae itaque reiciendis, expedita perspiciatis corporis laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       </div>
     </div>
 </main>
 
